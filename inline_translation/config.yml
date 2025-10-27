@@ -1,0 +1,22 @@
+repo_path: <git_repository folder path>
+file_path_to_translate: <git repository folder path>/files_to_translate
+translated_file_folder: <translated file folder path>/translated_file_output_folder
+source_language: English
+target_language: <language to translate to>
+
+#Git SQLite Database details
+sqlite3_database_folder: <SQLite DB folder>
+sqlite3_database_name: git_db.db
+sqlite_table_name: git_commit_details
+
+#langchain
+embeddings_model: all-MiniLM-L6-v2
+llm_model: gemma3:1b
+base_url: http://localhost:11434
+claude_llm_model: claude-sonnet-4-5-20250929
+anthropic_api_key: sk-ant-<Claude API Key>
+
+#chroma
+chroma_db_impl: duckdb+parquet
+chroma_persist_directory: <chroma DB perisistent folder path>/chroma_db
+collection_name: translation_db
