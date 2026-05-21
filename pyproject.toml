@@ -1,0 +1,45 @@
+[project]
+name = "IKEA_Assembly_Instruction_Processing"
+version = "0.1.0"
+description = "Generate Assembly Instructions for IKEA products Assembly Document using Docling, lancedb"
+authors = [
+    { name = "xyz", email = "[EMAIL ADDRESS]" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "falkordb==1.6.0",
+    "docling==2.75.0",
+    "docling-haystack==0.3.0",
+    "PyMuPDF==1.27.1",
+    "beautifulsoup4==4.14.3",
+    "torch==2.10.0",
+    "transformers==4.57.6",
+    "sentence-transformers==5.5.0",
+    "openai==2.37.0",
+    "ollama==0.6.1",
+    "pandas==3.0.3",
+    "numpy==2.4.6",
+    "pyarrow==24.0.0",
+    "pydantic==2.13.4",
+    "python-dotenv==1.2.1",
+    "tqdm==4.67.3",
+    "rich==14.3.3",
+    "playwright>=1.58.0",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "config*", "scripts*","data*"]
